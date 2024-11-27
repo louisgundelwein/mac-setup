@@ -20,7 +20,7 @@ log "Blue (Homebrew) installed successfully."
 # --- Install essential tools ---
 log "Installing essential tools..."
 brew update
-brew install git neovim wget zsh iterm2 || error_exit "Failed to install essential tools."
+brew install git neovim wget zsh iterm2 discord firefox visual-studio-code spotify chatgpt orcaslicer obsidian || error_exit "Failed to install essential tools."
 
 # --- Setup Oh My Zsh ---
 log "Installing Oh My Zsh..."
