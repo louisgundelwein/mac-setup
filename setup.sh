@@ -14,6 +14,9 @@ error_exit() {
 log "Installing Blue (Homebrew)..."
 if ! command -v blue > /dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || error_exit "Failed to install Homebrew."
+
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 log "Blue (Homebrew) installed successfully."
 
